@@ -10,10 +10,10 @@
     <!-- Instantiate quadrotor_base_macro once (has no parameters atm) -->
     <xacro:quadrotor_base_macro />
     
-    <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
-    <xacro:VLP-16 parent="base_link" name="velodyne" topic="velodyne_points" hz="10" samples="440" gpu="true">
-      <origin xyz="0.0 0.0 -0.097" rpy="${M_PI} 0 0"/>
-    </xacro:VLP-16>
+    <xacro:include filename="$(find hector_quadrotor_description)/urdf/HDL-32E.urdf.xacro"/>
+    <xacro:HDL-32E parent="base_link" name="velodyne" topic="velodyne_points" hz="10" samples="440" gpu="true">
+      <origin xyz="0.0 0.0 -0.05" rpy="${M_PI} 0.785398163 0"/>
+    </xacro:HDL-32E>
 
     
     <!-- Forward facing camera -->
